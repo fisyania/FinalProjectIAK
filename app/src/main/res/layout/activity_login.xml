@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0bfca"
+    tools:context="com.creativeerror.finalproject.LoginActivity">
+
+    <TextView
+        android:layout_width="368dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Learn to Code with Creative Error"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewCE"
+        android:textColor="#000000"
+        android:fontFamily="casual"/>
+
+    <ImageView
+        android:id="@+id/socialacc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/social"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textViewCE"
+        android:layout_marginStart="76dp" />
+    <ImageView
+        android:id="@+id/lady"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sociallady"
+        android:layout_marginStart="14dp"
+        android:layout_alignTop="@+id/socialacc"
+        android:layout_toEndOf="@+id/socialacc" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:id="@+id/buttonlogin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>
