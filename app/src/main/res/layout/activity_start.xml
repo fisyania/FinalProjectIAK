@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="com.creativeerror.finalproject.StartActivity">
+
+
+
+
 
     <ImageView
         android:id="@+id/ifu"
@@ -13,13 +18,16 @@
         android:src="@drawable/ifu"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="179dp" />
+        android:layout_marginTop="179dp"
+        android:layout_marginBottom="8dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Creative Error Present"
         android:layout_centerInParent="true"
-        android:layout_below="@id/ifu"/>
+        android:layout_below="@id/ifu"
+        android:textColor="@color/cardview_dark_background"/>
+
 
 
 </RelativeLayout>
