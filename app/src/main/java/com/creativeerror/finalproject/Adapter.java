@@ -18,9 +18,8 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
-    private List<Model> bahasalist;
+    private List <Model> bahasalist;
     Context context;
-
 
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -39,7 +38,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     }
 
 
-    public Adapter(Context context, List<Model>  bahasalist) {
+    public Adapter(Context context, List <Model>  bahasalist) {
         this. bahasalist=  bahasalist;
         this.context= context;
     }
@@ -54,7 +53,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        final Model bahasa =  bahasalist.get(position);
+        final Model bahasa = bahasalist.get(position);
         holder.nama.setText(bahasa.getNamaIndo());
         holder.gambar.setImageResource(bahasa.getGambar());
         holder.layout.setOnClickListener(new View.OnClickListener() {
@@ -65,8 +64,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         });
     }
 
-    @Override
-    public int getItemCount() {
-        return bahasalist.size();
-    }
+         @Override
+            public int getItemCount() {return bahasalist.size();}
+
+
 }
+

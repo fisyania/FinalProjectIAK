@@ -5,12 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainMenuActivity extends AppCompatActivity {
-    public class MainActivity extends AppCompatActivity {
         private List<Model> ModelList = new ArrayList<>();
         private RecyclerView recyclerView;
         private Adapter Adapter;
@@ -30,6 +28,7 @@ public class MainMenuActivity extends AppCompatActivity {
             recyclerView.setAdapter(Adapter);
 
             prepareData();
+            Adapter.notifyDataSetChanged();
         }
 
 
@@ -42,7 +41,6 @@ public class MainMenuActivity extends AppCompatActivity {
 
         }
 
-
         private void addToList(int gambar, String namaInd, String namaEng){
             bahasa = new Model(gambar, namaInd, namaEng);
             ModelList.add(bahasa);
@@ -52,7 +50,6 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
 
-}
 
 
 

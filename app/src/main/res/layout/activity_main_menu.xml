@@ -12,7 +12,8 @@ tools:context="com.creativeerror.finalproject.MainMenuActivity"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true" >
+        </android.support.v7.widget.RecyclerView>
 
 
 
