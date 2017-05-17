@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i;
-                i = new Intent(LoginActivity.this,MainMenuActivity.class);
+                i = new Intent(LoginActivity.this,MenuPilihan.class);
                 startActivity(i);
                 finish();
             }
