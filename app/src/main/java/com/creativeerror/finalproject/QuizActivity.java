@@ -54,10 +54,11 @@ public class QuizActivity extends AppCompatActivity {
 
     //digunakan untuk menset soal
     void prepareData(){
-        setQuestion("Dibawah ini activity lifecycle pada android kecuali?", "onCreate", "onStart", "onResume", "onCenter", "D");
-        setQuestion("Jenis view untuk menampilkan gambar disebut?", "ImageView", "PictureView", "GraphicView", "WallpaperView", "A");
-        setQuestion("untuk berpindah dari satu activity ke activity lain dapat menggunakan perintah?", "Move", "Intent", "Change", "Link", "B");
-
+        setQuestion("What does CSS stand for?", "Colorful Style Sheets", "Creative Style Sheets", "Computer Style Sheets", "Cascading Style Sheets", "D");
+        setQuestion("With this language listed below, which language is used to communicate with database ?", "SQL", "CSS", "PHP", "HTML", "A");
+        setQuestion("What does PHP stand for?", "Personal Hypertext Processor", "PHP: Hypertext Preprocessor", "Private Home Page", "Private Home Preprocessor", "B");
+        setQuestion("In the answer below, which one is used to control the layout of multiple web pages all at once ?", "CSS", "JAVA", "PHP", "HTML", "A");
+        setQuestion("Which language has Object-Oriented-Programming ?", "JAVA", "CSS", "PHP", "HTML", "A");
     }
 
     void setData(){
@@ -89,10 +90,10 @@ public class QuizActivity extends AppCompatActivity {
 
         int selectedAnsewer = optionGroup.indexOfChild(findViewById(optionGroup.getCheckedRadioButtonId()));
         if(index == selectedAnsewer){
-            Toast.makeText(this, "Benar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Correct :D", Toast.LENGTH_SHORT).show();
         }
         else{
-            Toast.makeText(this, "Salah", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Wrong :(", Toast.LENGTH_SHORT).show();
         }
     }
 

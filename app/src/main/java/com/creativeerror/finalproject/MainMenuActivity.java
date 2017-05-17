@@ -43,7 +43,7 @@ public class MainMenuActivity extends AppCompatActivity {
             addToList(R.drawable.html, "HTML", "You Choose HTML");
             addToList(R.drawable.note, "HTML stands for Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages","Hypertext Markup Language");
             addToList(R.drawable.java, "JAVA", "You Choose JAVA");
-            addToList(R.drawable.note, "JAVA is a general-purpose computer programming language that is concurrent, class-based, object-oriented,[14] and specifically designed to have as few implementation dependencies as possible","JAVA");
+            addToList(R.drawable.note, "JAVA is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible","JAVA");
             addToList(R.drawable.php, "PHP", "You Choose PHP");
             addToList(R.drawable.note,"PHP is an acronym for PHP: Hypertext Preprocessor\n" +
                     "it's widely-used, open source scripting language\n" +

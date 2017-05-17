@@ -24,7 +24,7 @@
         </activity>
         <activity
             android:name=".MainMenuActivity"
-            android:label="Choose Your Programming Language" />
+            android:label="Quiz Material" />
         <activity android:name=".MenuPilihan" />
         <activity android:name=".QuizActivity"></activity>
     </application>
